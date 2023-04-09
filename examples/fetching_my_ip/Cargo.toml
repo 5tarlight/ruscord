@@ -1,5 +1,5 @@
 [package]
-name = "fetching"
+name = "fetching_my_ip"
 version = "0.1.0"
 edition = "2021"
 
