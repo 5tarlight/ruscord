@@ -100,10 +100,10 @@ impl Url {
 
     /// Make URL literal for certain proposes.
     /// Mostly recommended.
-    pub fn get_url(&mut self, url_type: UrlType) -> String {
+    pub fn get_url(&mut self, url_type: UrlType) -> &Self {
         match url_type {
-            UrlType::Gateway => self.add_path("gateway").as_string(),
-            UrlType::GatewayBot => self.add_path("gateway").add_path("bot").as_string(),
+            UrlType::Gateway => self.add_path("gateway"),
+            UrlType::GatewayBot => self.add_path("gateway").add_path("bot"),
         }
     }
 }
