@@ -2,7 +2,7 @@ use std::{collections::HashMap, future::Future};
 
 use urlops::url::Url;
 
-pub async fn get_url(url: &Url) -> Result<HashMap<String, String>, Box<dyn std::error::Error>> {
+pub async fn fetch_url(url: &Url) -> Result<HashMap<String, String>, Box<dyn std::error::Error>> {
     let res = reqwest::get(url.as_string())
         .await?
         .json::<HashMap<String, String>>()
