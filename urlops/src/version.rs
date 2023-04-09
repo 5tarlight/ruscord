@@ -1,3 +1,4 @@
+/// Version of Discord API
 pub enum Version {
     V10,
     V9,
