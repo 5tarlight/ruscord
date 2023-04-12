@@ -7,13 +7,17 @@
   "license": "MIT",
   "private": "false",
   "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^18.15.11",
     "@types/ws": "^8.5.4",
+    "dotenv": "^16.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4",
     "ws": "^8.13.0"
   },
   "scripts": {
     "start": "ts-node src/client.ts",
-    "serve": "ts-node src/server.ts"
+    "serve": "ts-node src/server.ts",
+    "test": "ts-node src/discord.ts"
   }
 }
