@@ -1,5 +1,7 @@
-use ruscord_net::{fetch_url, unwrap_future};
-use urlops::url::{Url, UrlType};
+use ruscord::{
+    ruscord_net::{fetch_url, unwrap_future},
+    urlops::url::{Url, UrlType},
+};
 
 fn main() {
     let mut url = Url::new();
