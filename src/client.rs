@@ -16,7 +16,7 @@ pub struct Client {
     bio: String,
     locale: String, // TODO : ex. us-US. Enum
     mfa_enabled: bool,
-    premium_type: u8,
+    premium_type: u8, // TODO : Enum
     linked_users: Vec<String>,
     email: Option<String>,
     verified: bool,
