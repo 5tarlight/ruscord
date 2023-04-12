@@ -10,3 +10,8 @@ Cargo.lock
 **/*.rs.bk
 
 .env
+
+node_modules
+.DS_STORE
+/.vscode
+
