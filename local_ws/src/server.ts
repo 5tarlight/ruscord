@@ -17,7 +17,8 @@ wss.on("connection", function connection(ws, req) {
   );
 
   ws.on("message", function message(data) {
-    console.log("received: %s", data);
+    console.log("echo: %s", data);
+    ws.send(data);
   });
 });
 
